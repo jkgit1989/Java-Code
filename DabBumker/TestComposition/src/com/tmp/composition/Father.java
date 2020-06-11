@@ -1,0 +1,12 @@
+package com.tmp.composition;
+
+public class Father<T> {
+	T name;
+	T age;
+
+	@Override
+	public String toString() {
+		return "Hi, My name is : " + name + " and age is: " + age;
+	}
+
+}

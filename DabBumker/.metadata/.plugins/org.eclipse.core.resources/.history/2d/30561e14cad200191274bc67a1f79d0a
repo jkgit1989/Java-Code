@@ -1,0 +1,9 @@
+package com.tmp.composition;
+
+public class Person {
+
+	public Person() {
+
+	}
+
+}

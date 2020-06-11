@@ -1,0 +1,57 @@
+import java.awt.geom.FlatteningPathIterator;
+
+public class BasicStack <X> {
+
+	private X[] data;
+	private int stackpointer;
+	
+	
+	public BasicStack()
+	{
+		stackpointer=0;
+		data = (X[]) new Object[1000];
+	}
+	
+	
+	public void push(X item)
+	{
+		data[stackpointer++] = item;
+	}
+	
+	public X pop()
+	{
+		if (size()==0) {
+			throw new IllegalStateException("Stack is Empty!");
+		}
+		return data[--stackpointer];
+	}
+	
+	public boolean contains(X item)
+	{
+		boolean found = false;
+		for (int i = 0; i <size(); i++) {
+			if (data[i].equals(item)) {
+				return true;
+			}
+		}
+		
+		return found;
+	}
+	
+	public X access(X item)
+	{
+		while(stackpointer>0)
+		{
+			if (data[stackpointer].equals(item)) {
+				return item;
+			}
+		}
+		return item;
+		
+	}
+	
+	public int size()
+	{
+		return stackpointer;
+	}
+}

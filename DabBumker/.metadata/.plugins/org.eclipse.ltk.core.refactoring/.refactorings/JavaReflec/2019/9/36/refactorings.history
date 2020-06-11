@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ReflectionDemo.java&apos; to &apos;JavaReflec/src/com.reflex.demo&apos;&#x0D;&#x0A;- Original project: &apos;JavaReflec&apos;&#x0D;&#x0A;- Destination element: &apos;JavaReflec/src/com.reflex.demo&apos;&#x0D;&#x0A;- Original element: &apos;ReflectionDemo.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.reflex.demo" element1="/src&lt;{ReflectionDemo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1567845109528" units="1" version="1.0"/>
+</session>

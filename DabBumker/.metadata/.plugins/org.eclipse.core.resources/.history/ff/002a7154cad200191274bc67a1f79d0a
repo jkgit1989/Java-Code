@@ -1,0 +1,14 @@
+package com.tmp.composition;
+
+public class Kid {
+	int kidAge;
+	public Kid(int kidAge, String kidName) {
+		super();
+		this.kidAge = kidAge;
+		this.kidName = kidName;
+	}
+	String kidName;
+
+	
+	
+}

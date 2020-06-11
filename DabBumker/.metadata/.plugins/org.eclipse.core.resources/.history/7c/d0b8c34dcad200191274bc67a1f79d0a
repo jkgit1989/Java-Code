@@ -1,0 +1,10 @@
+package com.tmp.composition;
+
+public class Kid {
+	int kidAge;
+	String kidName;
+
+	public String getKid
+	
+	
+}

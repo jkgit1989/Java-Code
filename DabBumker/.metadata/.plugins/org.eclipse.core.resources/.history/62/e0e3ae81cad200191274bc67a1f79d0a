@@ -1,0 +1,7 @@
+package com.tmp.composition;
+
+public class TryComposition {
+public static void main(String[] args) {
+	
+}
+}

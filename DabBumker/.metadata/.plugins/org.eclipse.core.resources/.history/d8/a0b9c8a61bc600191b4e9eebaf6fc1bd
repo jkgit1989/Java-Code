@@ -1,0 +1,13 @@
+
+public class BasicStack <X> {
+
+	private X[] data;
+	private int stackpointer;
+	
+	
+	public BasicStack()
+	{
+		
+	}
+	
+}

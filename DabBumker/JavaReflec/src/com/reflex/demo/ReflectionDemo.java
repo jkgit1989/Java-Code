@@ -1,0 +1,117 @@
+package com.reflex.demo;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.rmi.activation.ActivationGroup;
+
+public class ReflectionDemo {
+
+	private int age;
+
+	private long accountnumber;
+
+	protected int price;
+
+	public String name;
+
+	String currencyType;
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public long getAccountnumber() {
+		return accountnumber;
+	}
+
+	public void setAccountnumber(long accountnumber) {
+		this.accountnumber = accountnumber;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String nam) {
+		name = nam;
+	}
+
+	public String getCurrencyType() {
+		return currencyType;
+	}
+
+	public void setCurrencyType(String currencyType) {
+		this.currencyType = currencyType;
+	}
+
+	public ReflectionDemo(int age, long accountnumber, int price, String name, String currencyType) {
+
+		this.age = age;
+
+		this.accountnumber = accountnumber;
+
+		this.price = price;
+
+		this.name = name;
+
+		this.currencyType = currencyType;
+
+	}
+
+	public static void main(String[] args) throws NoSuchFieldException, SecurityException, ClassNotFoundException, IllegalArgumentException, IllegalAccessException {
+
+		/*
+		 * int i = 0;
+		 * 
+		 * int modifier = ReflectionDemo.class.getModifiers();
+		 * 
+		 * System.err.println(modifier); Field decname =
+		 * ReflectionDemo.class.getDeclaredField("name");
+		 * System.err.println("Name is : " + decname);
+		 * 
+		 * Field name = ReflectionDemo.class.getField("name");
+		 * System.err.println("Name is : " + name);
+		 * 
+		 * Field[] allfields = ReflectionDemo.class.getDeclaredFields();
+		 * 
+		 * for (Field field : allfields) {
+		 * 
+		 * System.err.println(" field " + (i++) + " is : " + field); }
+		 * 
+		 * Method[] allmethods = ReflectionDemo.class.getDeclaredMethods(); for
+		 * (Method method : allmethods) { if
+		 * (Modifier.isPrivate(method.getModifiers())) {
+		 * System.err.println(" methodme " + (i++) + " is : " + method); }
+		 * 
+		 * }
+		 * 
+		 * Class<?> class1 = Class.forName("ReflectionDemo");
+		 * 
+		 * System.err.println(class1);
+		 */
+
+		Person person = new Person();
+
+		Class<?> personClaccname = person.getClass();
+		
+		Field field = personClaccname.getDeclaredField("age");
+		
+		field.setAccessible(true);
+		
+	
+
+	}
+}

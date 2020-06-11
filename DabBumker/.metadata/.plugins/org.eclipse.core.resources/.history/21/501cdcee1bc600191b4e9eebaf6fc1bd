@@ -1,0 +1,14 @@
+
+public class BasicStack <X> {
+
+	private X[] data;
+	private int stackpointer;
+	
+	
+	public BasicStack()
+	{
+		stackpointer=0;
+		data = new Object<>[1000];
+	}
+	
+}

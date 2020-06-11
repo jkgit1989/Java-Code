@@ -1,0 +1,43 @@
+
+public class BasicStack <X> {
+
+	private X[] data;
+	private int stackpointer;
+	
+	
+	public BasicStack()
+	{
+		stackpointer=0;
+		data = (X[]) new Object[1000];
+	}
+	
+	
+	public void push(X item)
+	{
+		data[stackpointer++] = item;
+	}
+	
+	public X pop()
+	{
+		if (size()==0) {
+			throw new IllegalStateException("Stack is Empty!");
+		}
+		return data[--stackpointer];
+	}
+	
+	public boolean contains()
+	{
+		boolean found = false;
+		
+	}
+	
+	public X access()
+	{
+		
+	}
+	
+	public int size()
+	{
+		return stackpointer;
+	}
+}

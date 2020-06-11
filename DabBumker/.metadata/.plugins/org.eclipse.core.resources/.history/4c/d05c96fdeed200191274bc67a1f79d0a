@@ -1,0 +1,17 @@
+package com.tmp.composition;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TryComposition {
+public static void main(String[] args) {
+	
+	
+	Father<?> person = new Father<String>();
+	
+	ArrayList<Long> arrayList = new ArrayList<Integer>();
+	person.name = "";
+	
+	
+}
+}

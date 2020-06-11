@@ -1,0 +1,11 @@
+package com.tmp.composition;
+
+public class Person<T extends Thread> {
+
+	Kid kid = new Kid(10, "nick");
+
+	public Person() {
+
+	}
+
+}

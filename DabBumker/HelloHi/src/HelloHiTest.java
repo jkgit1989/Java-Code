@@ -1,0 +1,36 @@
+public class HelloHiTest extends Thread {
+
+	public static Boolean status = false;
+
+	public static class Hello extends Thread {
+		@Override
+		public void run() {
+			while (!status) {
+			}
+			System.err.println(Thread.currentThread().getName() + ":  Hello");
+
+		}
+	}
+
+	public static class Hi extends Thread {
+		@Override
+		public void run() {
+			status = true;
+			System.err.println(Thread.currentThread().getName() + ": Hi");
+
+		}
+	}
+
+	public static void main(String[] args) {
+		new Thread(new Hello(), "Thread-1").start();
+
+		 try {
+		 sleep(500);
+		 } catch (InterruptedException e) {
+		
+		 e.printStackTrace();
+		 }
+
+		new Thread(new Hi(), "Thread-2").start();
+	}
+}

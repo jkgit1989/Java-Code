@@ -1,0 +1,10 @@
+package com.tmp.composition;
+
+public class TryComposition {
+public static void main(String[] args) {
+	
+	
+	Person<Thread> person = new Person<>();
+	
+}
+}

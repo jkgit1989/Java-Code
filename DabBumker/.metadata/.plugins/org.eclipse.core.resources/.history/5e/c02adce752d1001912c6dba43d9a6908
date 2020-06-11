@@ -1,0 +1,31 @@
+package com.reflex.demo;
+
+public class Test {
+	
+	public Test() {
+		System.err.println("-----");
+		static Test test;
+	}
+
+	public void m1(Integer integer) {
+		System.err.println(integer);
+
+	}
+
+	public void m1(String string) {
+		System.err.println(string);
+	}
+
+	public void m1(Object object) {
+		System.err.println(object);
+	}
+	
+	public static void main(String[] args) {
+
+		Test test = new Test();
+		//
+		
+		test.m1();
+
+	}
+}

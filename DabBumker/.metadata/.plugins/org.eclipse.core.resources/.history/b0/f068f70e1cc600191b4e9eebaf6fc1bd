@@ -1,0 +1,25 @@
+
+public class BasicStack <X> {
+
+	private X[] data;
+	private int stackpointer;
+	
+	
+	public BasicStack()
+	{
+		stackpointer=0;
+		data = (X[]) new Object[1000];
+	}
+	
+	
+	public void push()
+	{
+		
+	}
+	
+	public X pop()
+	{
+		
+	}
+	
+}

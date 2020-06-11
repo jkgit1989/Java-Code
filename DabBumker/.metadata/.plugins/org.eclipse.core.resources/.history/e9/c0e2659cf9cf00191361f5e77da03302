@@ -1,0 +1,27 @@
+public class HelloHiTest extends Thread {
+
+	public static Boolean status = false;
+
+	public static class Hello extends Thread {
+		@Override
+		public void run() {
+			System.err.println(Thread.currentThread().getName() + " : " + "Status " + status + "is Hello");
+		}
+	}
+
+	public static class Hi extends Thread {
+		@Override
+		public void run() {
+			status = true;
+			System.err.println(Thread.currentThread().getName() + " : " + "Status " + status + "is Hi");
+
+		}
+	}
+
+	public static void main(String[] args) {
+
+		new Thread(new Hello(), "Thread-1").start();
+		new Thread(new Hi(), "Thread-2").start();
+
+	}
+}
